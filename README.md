@@ -2,17 +2,87 @@
 
 > vue custom workbench component
 
-## Build Setup
+## Install
 
 ``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
+ npm install vue-workbench
 ```
-###  
-###### Module build failed: TypeError: this.getResolve is not a function,安装sass-loader时， 版本过高 一个报错给我搞了半天， 哭泣~
+## Example
+ Demo
+``` bash
+<template>
+    <workbench :config="config" :color="primaryColor">
+        <template v-slot:module1>
+          第一个模块的内容
+        </template>
+        <template v-slot:module2>
+          第二个模块的内容
+        </template>
+        <template v-slot:module3>
+          内容溢出时, overflow:auto
+        </template>
+        <!-- 多个template -->
+    </workbench>
+</template>
+
+<script>
+import workbench from "vue-workbench";
+export default {
+  components: { workbench },
+  data() {
+    return {
+      primaryColor: '#fdd',
+      config: [
+        {
+          name: "第一块",
+          nickName: "第一块",
+          order: 1,
+          width: "1/3",
+          height: 160,
+          moduleId: "1"
+        },
+        {
+          name: "第二块",
+          nickName: "第二块",
+          order: 2,
+          rowsShow: 5,
+          width: "1/3",
+          height: 160,
+          moduleId: "2"
+        },
+        // ...多个配置项
+      ]
+    };
+  }
+};
+</script>
+
+```
+![页面样式](https://github.com/santalzhou/vue-workbench/page.png)
+![页面样式](https://github.com/santalzhou/vue-workbench/pageEdit.png)
+## Props
+| Property | Description | Type |Remarks|
+| :-----| ----: | :----: |:----:|
+| config | configuration | Object |required(下表)|
+| color | primary color | String |not necessary |
+
+config
+
+| Property  | Type |required|
+| :----- | :----: |:----:|
+| name  | String |true |
+| nickName  | String |false |
+| order  | Number |true |
+| width  | String |true |
+| height  | Number |false |
+| moduleId  | String |true |
+
+order: 1,2,3...
+
+width: 1/4, 1/3, 1/2, 2/3, 3/4, 100%
+
+moduledId: 唯一，每块对应的插槽名称为'module'+moduledId
+
+## License
+MIT
+
