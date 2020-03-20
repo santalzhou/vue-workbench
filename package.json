@@ -1,7 +1,7 @@
 {
   "name": "vue-workbench",
   "description": "vue custom workbench component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "zhouyashu",
   "license": "MIT",
   "private": false,
