@@ -58,8 +58,14 @@ export default {
 </script>
 
 ```
-![页面样式](https://github.com/santalzhou/vue-workbench/blob/master/page.png)
-![页面样式](https://github.com/santalzhou/vue-workbench/blob/master/pageEdit.png)
+
+
+<img src="https://github.com/santalzhou/vue-workbench/blob/master/page.png" width="50%" alt="页面样式">
+
+
+<img src="https://github.com/santalzhou/vue-workbench/blob/master/pageEdit.png" width="50%" alt="页面样式">
+
+
 ## Props
 
 config
