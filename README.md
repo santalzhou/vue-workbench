@@ -2,6 +2,7 @@
 
 > vue custom workbench component
 
+    a simple custom workbench components, modify the page display module style
 ## Install
 
 ``` bash
