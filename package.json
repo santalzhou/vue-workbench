@@ -2,14 +2,22 @@
   "name": "vue-workbench",
   "description": "vue custom workbench component",
   "version": "1.0.0",
-  "author": "zys <3097165757@qq.com>",
+  "author": "zhouyashu",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server  --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
+  "homepage": "https://github.com/santalzhou/vue-workbench",
+  "keywords": [
+    "vue",
+    "component",
+    "custom",
+    "workbench"
+  ],
   "dependencies": {
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "vue": "^2.5.11"
   },
   "browserslist": [

@@ -110,7 +110,7 @@ export default {
     },
 
     resizeOrder(origOrder, currOrder) {
-      let origOrderArr = this.defaultConfig.map(item => item.order);
+      let origOrderArr = this.defaultConfig.map(item => Number(item.order));
       if (origOrder < currOrder) {
         return origOrderArr.map(item => {
           if (item <= currOrder && item >= origOrder) {

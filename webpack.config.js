@@ -6,7 +6,9 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'build.js'
+    filename: 'build.js',
+    // libraryTarget: 'umd',
+    // umdNamedDefine: true
   },
   module: {
     rules: [
@@ -20,11 +22,11 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [{
-            loader: "vue-style-loader" // 将 JS 字符串生成为 style 节点
+            loader: "vue-style-loader"
         }, {
-            loader: "css-loader" // 将 CSS 转化成 CommonJS 模块
+            loader: "css-loader"
         }, {
-            loader: "sass-loader" // 将 Sass 编译成 CSS
+            loader: "sass-loader"
         }], 
       },   
       {
@@ -33,7 +35,6 @@ module.exports = {
         options: {
           loaders: {
           }
-          // other vue-loader options go here
         }
       },
       {
@@ -69,7 +70,6 @@ module.exports = {
 
 if (process.env.NODE_ENV === 'production') {
   module.exports.devtool = '#source-map'
-  // http://vue-loader.vuejs.org/en/workflow/production.html
   module.exports.plugins = (module.exports.plugins || []).concat([
     new webpack.DefinePlugin({
       'process.env': {

@@ -2,7 +2,7 @@
   <div class="em-wrap">
     <section class="em-body">
       <p class="em-title">
-        <span class="em-title-label">模块名：</span>
+        <!-- <span class="em-title-label">模块名：</span> -->
         <span class="em-title-name">{{name}}</span>
       </p>
       <ul class="cfg-list">
@@ -64,7 +64,6 @@ export default {
       name: "",
       nickName: "",
       order: 0,
-      showOr: "",
       rowsShow: 0,
       width: "",
       height: 0,
@@ -77,7 +76,6 @@ export default {
         this.name = val.name;
         this.nickName = val.nickName;
         this.order = val.order;
-        this.showOr = val.showOr;
         this.width = val.width;
         this.height = val.height;
         this.moduleId = val.moduleId;
@@ -95,7 +93,6 @@ export default {
         name: this.name,
         nickName: this.nickName,
         order: this.order,
-        showOr: this.showOr,
         width: this.width,
         height: this.height,
         moduleId: this.moduleId
