@@ -31,9 +31,9 @@ export default {
   components: { workbench },
   data() {
     return {
-      primaryColor: '#fdd',
-      config: [
-        {
+      primaryColor: '#fdd',  // 主题色，非必须
+      config: [              // 配置项，必须， 见下表
+        { 
           name: "第一块",
           nickName: "第一块",
           order: 1,
@@ -58,13 +58,9 @@ export default {
 </script>
 
 ```
-![页面样式](https://github.com/santalzhou/vue-workbench/page.png)
-![页面样式](https://github.com/santalzhou/vue-workbench/pageEdit.png)
+![页面样式](https://github.com/santalzhou/vue-workbench/blob/master/page.png)
+![页面样式](https://github.com/santalzhou/vue-workbench/blob/master/page2.png)
 ## Props
-| Property | Description | Type |Remarks|
-| :-----| ----: | :----: |:----:|
-| config | configuration | Object |required(下表)|
-| color | primary color | String |not necessary |
 
 config
 
