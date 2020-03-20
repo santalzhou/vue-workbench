@@ -59,7 +59,7 @@ export default {
 
 ```
 ![页面样式](https://github.com/santalzhou/vue-workbench/blob/master/page.png)
-![页面样式](https://github.com/santalzhou/vue-workbench/blob/master/page2.png)
+![页面样式](https://github.com/santalzhou/vue-workbench/blob/master/pageEdit.png)
 ## Props
 
 config
