@@ -12,7 +12,7 @@
  Demo
 ``` bash
 <template>
-    <workbench :config="config" :color="primaryColor">
+    <workbench :config="config" :color="primaryColor" @resize="resizeHdl">
         <template v-slot:module1>
           第一个模块的内容
         </template>
@@ -54,6 +54,11 @@ export default {
         // ...多个配置项
       ]
     };
+  },
+  methods: {
+    resizeHdl(cfg){ // 参数是修改过的配置文件
+      // ... 做一些事情 
+    }
   }
 };
 </script>
@@ -85,6 +90,10 @@ order: 1,2,3...
 width: 1/4, 1/3, 1/2, 2/3, 3/4, 100%
 
 moduledId: 唯一，每块对应的插槽名称为'module'+moduledId
+
+## Events
+  
+  resize: 每次更改编辑框都会触发此事件，返回调整后的config(Array, 配置项)
 
 ## License
 MIT
