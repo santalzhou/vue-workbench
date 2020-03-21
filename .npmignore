@@ -1,0 +1,20 @@
+.DS_Store
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# 新增
+src/
+index.html
+package.json
+page.png
+pageEdit.png
+.editorconfig
+
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
