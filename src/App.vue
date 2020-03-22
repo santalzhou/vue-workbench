@@ -29,11 +29,11 @@ export default {
   },
   data() {
     return {
-      primaryColor: '#fdd',
+      primaryColor: '#dfd',
       config: [
         {
           name: "第一块",
-          nickName: "第一块",
+          nickName: "第一块111",
           order: 1, // 排序
           width: "1/3",
           height: 160,
