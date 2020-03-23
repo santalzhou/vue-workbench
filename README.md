@@ -3,6 +3,7 @@
 > vue custom workbench component
 
     a simple custom workbench components, modify the page display module style
+    vue的组件，自定义工作台，能改变页面上不同模块显示的顺序、大小、标题
 ## Install
 
 ``` bash
