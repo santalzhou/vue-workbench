@@ -29,7 +29,7 @@ export default {
   },
   data() {
     return {
-      primaryColor: '#dfd',
+      primaryColor: '#5491f4',
       config: [
         {
           name: "第一块",
