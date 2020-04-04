@@ -6,7 +6,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'main.js',
+    filename: 'index.js',
     libraryTarget: 'umd',
     umdNamedDefine: true,
     devtoolModuleFilenameTemplate: '[absolute-resource-path]',
@@ -20,17 +20,17 @@ module.exports = {
           'vue-style-loader',
           'css-loader'
         ],
-      },  
+      },
       {
         test: /\.scss$/,
         use: [{
-            loader: "vue-style-loader"
+          loader: "vue-style-loader"
         }, {
-            loader: "css-loader"
+          loader: "css-loader"
         }, {
-            loader: "sass-loader"
-        }], 
-      },   
+          loader: "sass-loader"
+        }],
+      },
       {
         test: /\.vue$/,
         loader: 'vue-loader',
@@ -71,7 +71,7 @@ module.exports = {
 }
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports.devtool = '#source-map'
+  module.exports.devtool = 'none'
   module.exports.plugins = (module.exports.plugins || []).concat([
     new webpack.DefinePlugin({
       'process.env': {

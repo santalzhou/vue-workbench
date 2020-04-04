@@ -6,11 +6,14 @@ yarn-error.log
 # 新增
 src/
 index.html
-package.json
 page.png
 pageEdit.png
 .editorconfig
-
+test/
+.gitignore
+.babelrc
+README.md
+.travis.yml
 
 # Editor directories and files
 .idea
