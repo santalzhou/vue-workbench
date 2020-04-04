@@ -1,5 +1,5 @@
 import { mount, shallowMount } from '@vue/test-utils'
-import workBench from '../src/components/workBench.vue'
+import workBench from '../src/components/workbench.vue'
 import editModule from '../src/components/editModule.vue'
 import Vue from 'vue'
 

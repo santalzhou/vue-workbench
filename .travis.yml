@@ -1,10 +1,6 @@
 language: node_js
 node_js: 
    - "10"
-script:
-  - "npm run test"
-
-# safelist // 构建的分支
 branches:
   only:
   - dev
